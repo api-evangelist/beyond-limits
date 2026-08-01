@@ -1,0 +1,70 @@
+generated: '2026-07-31'
+method: probed
+source: live HTTPS probes of every Beyond Limits host on 2026-07-31
+found: 0
+note: >-
+  Every /.well-known/ path probed returned HTTP 404. The beyond.ai origin is a
+  Webflow site that answers all /.well-known/* requests with a fixed HTML body
+  ("Invalid .well-known request"), so no discovery document is published. No
+  `type: WellKnown` or `type: SecurityTxt` pointer is wired in apis.yml because
+  nothing was found — this file records the negative probe result only.
+hosts:
+- host: https://www.beyond.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://beyond.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://doclinkai.com
+  note: marketing site of Altec, the Beyond Limits document-automation subsidiary
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+hosts_unresolved:
+  note: no DNS A record returned; these subdomains do not exist
+  hosts:
+  - api.beyond.ai
+  - app.beyond.ai
+  - docs.beyond.ai
+  - developer.beyond.ai
+  - portal.beyond.ai
+  - go.beyond.ai
+  - trust.beyond.ai
+  - security.beyond.ai
+  - status.beyond.ai
+hosts_unreachable:
+  note: DNS resolves but the TLS handshake fails (tlsv1 alert internal error);
+    legacy domain with no working certificate
+  hosts:
+  - beyondlimits.ai
+  - www.beyondlimits.ai

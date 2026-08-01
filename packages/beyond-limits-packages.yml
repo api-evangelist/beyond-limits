@@ -1,0 +1,51 @@
+generated: '2026-07-31'
+method: searched
+source: npm registry search, PyPI, NuGet, GitHub org Beyond-Limits-Corp
+summary: >-
+  Beyond Limits publishes no public API client SDK on any registry. A single npm
+  package is traceable to the company through its maintainer's beyond.ai email
+  address, but it is a dormant internal UI package (last publish 2018), not a
+  client library for a public API. Registries probed with no first-party result:
+  PyPI (beyond-limits / beyondai / beyond-ai all 404), Maven Central, NuGet,
+  pkg.go.dev, RubyGems, Packagist, crates.io. The company's only public GitHub
+  repository is a fork of the third-party pandas-ai project.
+packages:
+- language: javascript
+  registry: npm
+  name: beyond-ai-bli-ui
+  url: https://www.npmjs.com/package/beyond-ai-bli-ui
+  install: npm install beyond-ai-bli-ui
+  version: 0.2.3
+  published: '2018-10-23'
+  official: true
+  kind: ui-components
+  note: >-
+    Attributed to Beyond Limits via npm maintainer pshorey-beyond-ai
+    (pshorey@beyond.ai). No description, homepage or repository is declared on
+    the package. Dormant since 2018 and not an API client library, so it is NOT
+    counted as an SDK and no `type: SDKs` pointer is emitted.
+  evidence:
+    source: https://registry.npmjs.org/beyond-ai-bli-ui
+    maintainer_email: pshorey@beyond.ai
+registries_probed:
+- registry: npm
+  result: 1 attributable package (see above)
+- registry: pypi
+  result: no first-party package (beyond-limits, beyondai, beyond-ai all HTTP 404)
+- registry: nuget
+  result: no first-party package
+- registry: maven-central
+  result: no first-party package
+- registry: pkg.go.dev
+  result: no first-party package
+- registry: rubygems
+  result: no first-party package
+- registry: packagist
+  result: no first-party package
+- registry: crates.io
+  result: no first-party package
+source_code:
+- org: https://github.com/Beyond-Limits-Corp
+  public_repos: 1
+  note: single repository is a fork of the third-party pandas-ai project; no
+    first-party SDK or spec published

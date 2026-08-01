@@ -1,0 +1,81 @@
+# Beyond Limits (BeyondAI)
+
+> Beyond Limits, trading as BeyondAI, is an enterprise and industrial artificial
+> intelligence company founded in 2014 in Glendale, California, built on cognitive
+> and neuro-symbolic AI technology licensed from Caltech and NASA's Jet Propulsion
+> Laboratory. Its Hybrid AI Platform combines machine learning, generative AI and
+> rule-based symbolic reasoning so industrial operators receive explainable,
+> auditable recommendations rather than black-box predictions. It sells into energy
+> and LNG, oil and gas, refining, petrochemicals, utilities, mining, manufacturing,
+> aerospace and critical infrastructure.
+
+Important: Beyond Limits publishes **no public API**. There is no developer portal,
+no API reference, no OpenAPI/AsyncAPI/GraphQL/MCP contract, no self-service sign-up
+and no public sandbox. The Hybrid AI Platform's low-code API, Data, ML Ops (PRE) and
+KB Ops services are available only to customers under a commercial development
+license, obtained through sales. Any agent attempting programmatic integration must
+go through https://www.beyond.ai/contact/sales-contact.
+
+## Products
+
+- [Hybrid AI Platform](https://www.beyond.ai/enterprise-ai/hybrid-ai): Enterprise
+  platform combining generative AI, neuro-symbolic reasoning and expert knowledge
+  capture; development license includes a low-code API, Data services, ML Ops (PRE)
+  and KB Ops, plus a development sandbox instance licensed per domain.
+- [Operations Advisor](https://www.beyond.ai/enterprise-ai/operations-advisor):
+  Decision support for industrial operations teams.
+- [Beyond Search / Private GenAI](https://www.beyond.ai/enterprise-ai/gen-ai):
+  Secure enterprise knowledge intelligence and digital assistants.
+- [AI in a Box](https://www.beyond.ai/enterprise-ai/ai-in-a-box): On-premises
+  enterprise AI infrastructure appliance.
+- [DocLink](https://www.beyond.ai/enterprise-ai/doclink): Document, data and process
+  automation with ERP integration, from the Altec subsidiary.
+- [PRE](https://www.beyond.ai/enterprise-ai/pre): No-code Hybrid AI service for
+  surfacing operational anomalies, predicting events and recommending actions.
+- [KB Ops](https://www.beyond.ai/enterprise-ai/kbops): No-code platform for subject
+  matter experts to capture and operationalize domain knowledge.
+- [AI Services](https://www.beyond.ai/enterprise-ai/ai-services) and
+  [AI Academy](https://www.beyond.ai/enterprise-ai/ai-academy).
+
+## Technology
+
+- [Neuro-Symbolic AI](https://www.beyond.ai/enterprise-ai/neuro-symbolic-ai)
+- [Explainable AI](https://www.beyond.ai/enterprise-ai/explainable-ai)
+- [Our Technology](https://www.beyond.ai/about/our-technology)
+
+## Company
+
+- [Our Story](https://www.beyond.ai/about/our-story)
+- [Our People](https://www.beyond.ai/about/our-people)
+- [Our Partners](https://www.beyond.ai/about/our-partners)
+- [Office Locations](https://www.beyond.ai/about/office-locations)
+- [Careers](https://www.beyond.ai/about/careers)
+- [GitHub organization](https://github.com/Beyond-Limits-Corp): one public
+  repository, a fork of the third-party pandas-ai project. No first-party SDK.
+
+## Resources
+
+- [Blog](https://www.beyond.ai/others/blog)
+- [Blog RSS](https://www.beyond.ai/blog/rss.xml)
+- [Videos](https://www.beyond.ai/others/videos)
+- [Events](https://www.beyond.ai/others/ai-events)
+- [Awards](https://www.beyond.ai/others/awards)
+
+## Contact and legal
+
+- [Sales contact](https://www.beyond.ai/contact/sales-contact)
+- [Media contact](https://www.beyond.ai/contact/media-contact)
+- [Supplier contact](https://www.beyond.ai/contact/supplier-contact)
+- [Terms of Service](https://www.beyond.ai/policys/terms-of-service)
+- [Privacy Policy](https://www.beyond.ai/policys/privacy-policy)
+- [Ethics and Compliance](https://www.beyond.ai/policys/ethics-and-compliance)
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/beyond-limits/refs/heads/main/apis.yml)
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/beyond-limits/refs/heads/main/security/beyond-limits-domain-security.yml)
+- [Well-known probe results](https://raw.githubusercontent.com/api-evangelist/beyond-limits/refs/heads/main/well-known/beyond-limits-well-known.yml)
+- [Packages](https://raw.githubusercontent.com/api-evangelist/beyond-limits/refs/heads/main/packages/beyond-limits-packages.yml)
+
+Generated: 2026-07-31 (method: generated, from apis.yml and repo artifacts —
+https://www.beyond.ai/llms.txt is not published; the host returns the site shell).

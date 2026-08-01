@@ -1,8 +1,21 @@
 aid: beyond-limits
 name: Beyond Limits
-description: 'Beyond Limits is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Beyond Limits (trading as BeyondAI) is an enterprise and industrial artificial
+  intelligence company founded in 2014 and headquartered in Glendale, California, built
+  on cognitive and neuro-symbolic AI technology licensed from Caltech and NASA''s Jet
+  Propulsion Laboratory. Its Hybrid AI Platform combines machine learning, generative
+  AI and rule-based symbolic reasoning so that industrial operators get explainable,
+  auditable recommendations instead of black-box predictions. Products include the
+  Hybrid AI Platform (with Data, ML Ops/PRE, KB Ops and a low-code API available under
+  a development license), Operations Advisor, Beyond Search generative AI, AI in a
+  Box on-premises infrastructure, and DocLink document process automation from its
+  Altec subsidiary. The company sells into energy and LNG, oil and gas, refining, petrochemicals,
+  utilities, mining, manufacturing, aerospace and critical infrastructure. Beyond Limits
+  publishes no public developer portal, API reference or self-service sign-up; platform
+  API access is granted to licensed customers, so there is no publicly discoverable
+  machine-readable contract for this provider.'
 url: https://raw.githubusercontent.com/api-evangelist/beyond-limits/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/66fa4dc606c7344f4b994f9a/677cb9a90eadd303c26b79e2_webclip2_BL_Webflow.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +25,17 @@ created: '2026-07-31'
 modified: '2026-07-31'
 tags:
 - Company
+- Artificial Intelligence
+- Industrial AI
+- Enterprise AI
+- Neuro-Symbolic AI
+- Machine Learning
+- Generative AI
+- Energy
+- Oil and Gas
+- Manufacturing
+- Utilities
+- Document Automation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +43,67 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/beyond-limits-domain-security.yml
 - type: Website
+  url: https://www.beyond.ai/
+- type: SecondaryMarket
   url: https://forgeglobal.com/beyond-limits_stock/
+- type: About
+  url: https://www.beyond.ai/about/our-story
+- type: Technology
+  url: https://www.beyond.ai/about/our-technology
+- type: Partners
+  url: https://www.beyond.ai/about/our-partners
+- type: Blog
+  url: https://www.beyond.ai/others/blog
+- type: BlogRSS
+  url: https://www.beyond.ai/blog/rss.xml
+- type: GitHubOrganization
+  url: https://github.com/Beyond-Limits-Corp
+- type: Contact
+  url: https://www.beyond.ai/contact/sales-contact
+- type: TermsOfService
+  url: https://www.beyond.ai/policys/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.beyond.ai/policys/privacy-policy
+- type: Compliance
+  url: https://www.beyond.ai/policys/ethics-and-compliance
+- type: Careers
+  url: https://www.beyond.ai/about/careers
+- type: Packages
+  url: packages/beyond-limits-packages.yml
+- type: LLMsTxt
+  url: llms/beyond-limits-llms.txt
+x-enrichment:
+  date: '2026-07-31'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-contract-discovery:
+  date: '2026-07-31'
+  result: none
+  summary: >-
+    No machine-readable API contract is publicly discoverable. Beyond Limits sells
+    a licensed enterprise platform; the Hybrid AI Platform low-code API is granted
+    to customers under a development license and is not documented publicly. The
+    115-URL sitemap at www.beyond.ai contains no developer, docs, API-reference,
+    pricing, sign-up or status pages.
+  probes:
+  - kind: openapi
+    paths: [/openapi.json, /openapi.yaml, /swagger.json, /api-docs]
+    hosts: [www.beyond.ai, beyond.ai, doclinkai.com]
+    result: all 404 (Webflow/WordPress HTML shell)
+  - kind: graphql
+    result: no /graphql surface found on any resolving host
+  - kind: mcp
+    result: no hosted MCP server published or advertised
+  - kind: a2a
+    paths: [/.well-known/agent-card.json, /.well-known/agent.json]
+    hosts: [www.beyond.ai, beyond.ai, doclinkai.com]
+    result: all 404 — no agent card, nothing written to a2a/
+  - kind: asyncapi
+    result: no event, streaming or webhook surface documented
+  - kind: subdomains
+    tried: [api, app, docs, developer, portal, go, trust, security, status]
+    result: no DNS A record for any of them under beyond.ai
