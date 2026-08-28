@@ -15,6 +15,17 @@ description: 'Beyond Limits (trading as BeyondAI) is an enterprise and industria
   API access is granted to licensed customers, so there is no publicly discoverable
   machine-readable contract for this provider.'
 url: https://raw.githubusercontent.com/api-evangelist/beyond-limits/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/66fa4dc606c7344f4b994f9a/677cb9a90eadd303c26b79e2_webclip2_BL_Webflow.png
 x-type: company
 x-source: harvest:secondary-market
