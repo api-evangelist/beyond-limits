@@ -52,7 +52,7 @@ tags:
 - Industrial AI
 - Enterprise AI
 - Neuro-Symbolic AI
-- Machine-Learning
+- Machine Learning
 - Generative AI
 - Energy
 - Oil and Gas
@@ -72,6 +72,7 @@ tags_raw:
 - Manufacturing
 - Utilities
 - Document Automation
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
